@@ -1,0 +1,79 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+.content{
+     display: flex;
+    flex-direction: column; 
+    border: 3px solid ;
+    border-radius: 15px;
+    max-width: 420px;
+    height: 820px;
+    background-color: black;
+}
+.header{
+    font-size: 52px;
+    margin: 15px;
+    padding: 1rem;
+    border: .5px solid;
+    border-radius: 15px;
+    background-color:#a0a0a0;
+}
+input {
+    text-align: right;
+    width: 100%;
+    font-size: 3rem;
+    padding: 0 .5rem;
+    box-sizing: border-box;
+    background-color:#a0a0a0;
+    outline: none;
+    border: none;
+    color: black;
+}
+.main{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px;
+    gap: 1rem;
+    /* border: 2px solid white; */
+}
+.btn{
+    margin: auto;
+    display: flex;
+    width: 21%;
+    height: 13%;
+    border: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  transition: background-color 0.3s ease;
+}
+.btn-zero{
+    width: 45%;
+    justify-content: left;
+    border-radius: 40px;
+}
+.btn-gray{
+    background-color:#a0a0a0;
+}
+.btn-orange{
+    background-color: #F39422;
+    color: white;
+}
+#divide:focus,
+#multiply:focus, 
+#minus:focus, 
+#add:focus{
+    color: #F39422;
+    background-color: white;
+    outline: none;
+}
+.btn-bl-gray{
+    background-color:#525252;
+    color: white;
+}

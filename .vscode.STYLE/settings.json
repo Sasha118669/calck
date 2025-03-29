@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 18,
+    "editor.letterSpacing": 0.5,
+    "editor.minimap.sectionHeaderLetterSpacing": 1,
+    "terminal.integrated.letterSpacing": 0,
+    "terminal.integrated.fontSize": 18,
+    "editor.lineHeight": 1.5,
+    "editor.fontFamily": "JetBrains Mono', Consolas, 'Courier New', monospace"
+}
