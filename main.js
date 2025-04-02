@@ -42,11 +42,13 @@ main.addEventListener('click', event => {
           input.value = -parseFloat(input.value);
         
         } else if(keyValue === '%'){
-          if(operator ==='+' || operator ==='-'){
-          if(operand !== null){
+          if(operator ==='+'){
            input.value = parseFloat(operand) + (parseFloat(operand) * parseFloat(input.value)) / 100;
-          }
-          } else if (operator === "*") {
+          
+          } if(operator ==='-'){
+            input.value = parseFloat(operand) - (parseFloat(operand) * parseFloat(input.value)) / 100;
+           
+           } else if (operator === "*") {
             input.value = parseFloat(operand) * (parseFloat(input.value) / 100);
 
           } else if (operator === "/") {
