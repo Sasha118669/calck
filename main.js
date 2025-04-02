@@ -38,6 +38,9 @@ main.addEventListener('click', event => {
          operator = null;
          concat = true;
 
+        } else if(keyValue === '+/-' && input.value !== '0'){
+          input.value = -parseFloat(input.value);
+        
         } else if(['+' , '-', '*', '/'].includes(keyValue)){
         if(operand !== null && operator !== null){
           input.value = doOperation(operand, operator, input.value);
