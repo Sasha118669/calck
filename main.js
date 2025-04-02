@@ -41,6 +41,21 @@ main.addEventListener('click', event => {
         } else if(keyValue === '+/-' && input.value !== '0'){
           input.value = -parseFloat(input.value);
         
+        } else if(keyValue === '%'){
+          if(operator ==='+' || operator ==='-'){
+          if(operand !== null){
+           input.value = parseFloat(operand) + (parseFloat(operand) * parseFloat(input.value)) / 100;
+          }
+          } else if (operator === "*") {
+            input.value = parseFloat(operand) * (parseFloat(input.value) / 100);
+
+          } else if (operator === "/") {
+            input.value = parseFloat(operand) / (parseFloat(input.value) / 100);
+
+          } else {
+            input.value = parseFloat(input.value) / 100;
+          }
+
         } else if(['+' , '-', '*', '/'].includes(keyValue)){
         if(operand !== null && operator !== null){
           input.value = doOperation(operand, operator, input.value);
